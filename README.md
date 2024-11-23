@@ -2,11 +2,11 @@
 
 1. Клонирование репозитория
 
-```git clone https://github.com/ScorP14/{{!!!!}}```
+```git clone https://github.com/ScorP14/library_books_cli.git```
 
-2. Переход в директорию {{!!!!}}
+2. Переход в директорию library_books_cli
 
-```cd {{!!!!}}```
+```cd library_books_cli```
 
 3. Запустить приложение
 
