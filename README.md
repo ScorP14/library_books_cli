@@ -12,5 +12,11 @@
 
 ```python src/run_app_cls_client.py```
 
+## Тестирование
+1. Переход в директорию tests
 
+```cd tests```
 
+2. Запуск pytest
+
+```pytest -rp```
