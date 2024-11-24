@@ -14,7 +14,9 @@ class BookRepositoryTest(IBookRepository):
 
     def add(self, event: CreateBook) -> Book:
         self.storage[self.autoincrement] = event.as_dict()
-        book = MapperBook.from_dict_to_model({"id": self.autoincrement} | event.as_dict())
+        book = MapperBook.from_dict_to_model(
+            {"id": self.autoincrement} | event.as_dict()
+        )
         self.autoincrement += 1
         return book
 
@@ -27,9 +29,9 @@ class BookRepositoryTest(IBookRepository):
         result = []
         for _id, book in self.storage.items():
             if (
-                    book["title"] == query
-                    or book["author"] == query
-                    or (query.isdigit() and book["year"] == int(query))
+                book["title"] == query
+                or book["author"] == query
+                or (query.isdigit() and book["year"] == int(query))
             ):
                 result.append(MapperBook.from_dict_to_model({"id": _id} | book))
         return result
