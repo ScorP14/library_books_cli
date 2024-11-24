@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+src/database/books_db.json
 
 # C extensions
 *.so
