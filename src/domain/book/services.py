@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Sequence
-from domain.entity import Book, StatusEnum
-from domain.event import CreateBook, DeleteBook, SetStatusBook
+from domain.book.entity import Book, StatusEnum
+from domain.book.event import CreateBook, DeleteBook, SetStatusBook
 from infrastructure.repository.books.interface import IBookRepository
 
 

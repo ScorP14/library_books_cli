@@ -1,6 +1,6 @@
 from dataclasses import dataclass, asdict
 
-from domain.entity import StatusEnum
+from domain.book.entity import StatusEnum
 
 
 @dataclass

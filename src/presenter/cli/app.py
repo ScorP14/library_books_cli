@@ -1,4 +1,4 @@
-from domain.services import ServicesBook
+from domain.book.services import ServicesBook
 from infrastructure.repository.books.json_repo import BookRepositoryJson
 from presenter.cli.view import (
     add_book,

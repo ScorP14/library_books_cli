@@ -1,7 +1,7 @@
 from typing import Protocol, Sequence
 
-from domain.entity import Book
-from domain.event import CreateBook, DeleteBook, SetStatusBook
+from domain.book.entity import Book
+from domain.book.event import CreateBook, DeleteBook, SetStatusBook
 
 
 class IBookRepository(Protocol):

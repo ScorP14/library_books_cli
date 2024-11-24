@@ -4,8 +4,8 @@ from typing import Sequence, Any
 import json
 import os
 
-from domain.entity import Book, MapperBook
-from domain.event import CreateBook, DeleteBook, SetStatusBook
+from domain.book.entity import Book, MapperBook
+from domain.book.event import CreateBook, DeleteBook, SetStatusBook
 from exeption.repository import NotFoundByIdError
 from infrastructure.repository.books.interface import IBookRepository
 

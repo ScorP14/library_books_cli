@@ -1,6 +1,6 @@
 from typing import Sequence
 
-from domain.entity import Book
+from domain.book.entity import Book
 
 
 def print_sequence_books(books: Sequence[Book]) -> None:
